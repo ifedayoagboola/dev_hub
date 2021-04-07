@@ -1,24 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-import { MailWithCircle } from "@styled-icons/entypo-social/MailWithCircle";
 import msg1 from "./images/msg1.svg";
 
-const SignIn = () => {
+const SignUp = () => {
   return (
     <>
       <Parent>
         <Content>
           <p>
-            Already have an account?
+            Don't have an account?
             <span>
-              <a href=""> Sign In</a>
+              <a href=""> Sign up</a>
             </span>
           </p>
           <form action="">
-            <div>
-              <label>Username</label>
-              <input type="text" />
-            </div>
             <div>
               <label>E-mail</label>
               <input type="email" />
@@ -27,8 +22,12 @@ const SignIn = () => {
               <label>Pasword</label>
               <input type="password" />
             </div>
-            <button>SIGN UP</button>
+            <button>SIGN IN</button>
           </form>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
+            numquam!
+          </p>
         </Content>
       </Parent>
     </>
@@ -74,7 +73,6 @@ const Content = styled.div`
       box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
     }
   }
-
   button {
     width: 100%;
     padding: 0.8rem;
@@ -98,4 +96,4 @@ const Content = styled.div`
   }
 `;
 
-export default SignIn;
+export default SignUp;
