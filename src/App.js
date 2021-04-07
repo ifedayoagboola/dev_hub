@@ -1,7 +1,10 @@
+import GlobalStyle from "./globalStyles";
+import SignIn from "./SignIn";
 function App() {
   return (
     <div className="App">
-      <h1>Dev_Hub</h1>
+      <GlobalStyle />
+      <SignIn />
     </div>
   );
 }
