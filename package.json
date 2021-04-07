@@ -1,6 +1,7 @@
 {
   "name": "dev_hub",
   "version": "0.1.0",
+  "homepage": "git@github.com:ifedayoagboola/dev_hub.git",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
