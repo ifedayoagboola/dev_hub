@@ -7,7 +7,7 @@ const DevDashBoard = () => {
     <Container>
       <Content>
         <Profile>
-          <h3>My Profile</h3>
+          <h2>My Profile</h2>
           <Image>
             <img src={img1} alt="" />
           </Image>
@@ -21,13 +21,18 @@ const DevDashBoard = () => {
           </Info>
         </Profile>
         <Projects>
-          <h2>Projects</h2>
-          <h2>Add New Project</h2>
-          <Project>
-            <p>Project name</p>
-            <a href="">Link</a>
-            <p>Stack used</p>
-          </Project>
+          <Header>
+            <h2>Projects</h2>
+            <h3>Add</h3>
+          </Header>
+          <ProjectList>
+            <Project>
+              <p>Project name</p>
+              <p>Description</p>
+              <a href="">Link</a>
+              <p>Stack used</p>
+            </Project>
+          </ProjectList>
         </Projects>
       </Content>
     </Container>
@@ -41,7 +46,6 @@ const Content = styled.div`
 `;
 const Profile = styled.div`
   flex: 1;
-  padding: 3rem 0;
 `;
 const Image = styled.div`
   max-width: 300px;
@@ -58,5 +62,18 @@ const Info = styled.div`
 const Projects = styled.div`
   flex: 2;
 `;
-const Project = styled.div``;
+const Header = styled.div`
+  display: flex;
+  gap: 2rem;
+`;
+const ProjectList = styled.div`
+  margin: 2rem 0;
+  display: flex;
+`;
+const Project = styled.div`
+  width: 100%;
+  border: 3px solid blue;
+  flex: 1;
+  flex-wrap: wrap;
+`;
 export default DevDashBoard;
