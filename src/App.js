@@ -1,3 +1,4 @@
+import DevDashBoard from "./DevDashBoard";
 import GlobalStyle from "./globalStyles";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
@@ -7,6 +8,7 @@ function App() {
       <GlobalStyle />
       <SignIn />
       <SignUp />
+      <DevDashBoard />
     </div>
   );
 }
