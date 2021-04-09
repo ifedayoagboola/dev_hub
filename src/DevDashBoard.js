@@ -12,12 +12,13 @@ const DevDashBoard = () => {
             <img src={img1} alt="" />
           </Image>
           <Info>
-            <h4>Ifedayo Agboola</h4>
+            <Name>
+              <h3>Ifedayo Agboola</h3> <button>Edit profile</button>
+            </Name>
             <p>Your favourite Tech guy</p>
-            <button>Edit profile</button>
-            <p>Company</p>
+            <p>Teragon LTD.</p>
             <p>ifedayoagboola19@gmail.com</p>
-            <p>Stack</p>
+            <p>Stack: Javascript, React</p>
           </Info>
         </Profile>
         <Projects>
@@ -32,6 +33,42 @@ const DevDashBoard = () => {
               <a href="">Link</a>
               <p>Stack used</p>
             </Project>
+            <Project>
+              <p>Project name</p>
+              <p>Description</p>
+              <a href="">Link</a>
+              <p>Stack used</p>
+            </Project>
+            <Project>
+              <p>Project name</p>
+              <p>Description</p>
+              <a href="">Link</a>
+              <p>Stack used</p>
+            </Project>
+            <Project>
+              <p>Project name</p>
+              <p>Description</p>
+              <a href="">Link</a>
+              <p>Stack used</p>
+            </Project>
+            <Project>
+              <p>Project name</p>
+              <p>Description</p>
+              <a href="">Link</a>
+              <p>Stack used</p>
+            </Project>
+            <Project>
+              <p>Project name</p>
+              <p>Description</p>
+              <a href="">Link</a>
+              <p>Stack used</p>
+            </Project>
+            <Project>
+              <p>Project name</p>
+              <p>Description</p>
+              <a href="">Link</a>
+              <p>Stack used</p>
+            </Project>
           </ProjectList>
         </Projects>
       </Content>
@@ -40,24 +77,36 @@ const DevDashBoard = () => {
 };
 const Container = styled.div`
   padding: 3rem;
+  max-width: 1300px;
 `;
 const Content = styled.div`
   display: flex;
 `;
 const Profile = styled.div`
   flex: 1;
+  h2 {
+    margin-bottom: 2rem;
+  }
+`;
+const Name = styled.div`
+  display: flex;
+  gap: 2rem;
 `;
 const Image = styled.div`
   max-width: 300px;
   height: 300px;
   border-radius: 50%;
-  border: 3px solid blue;
+
+  border: 3px solid #201568;
   img {
     width: 100%;
   }
 `;
 const Info = styled.div`
   margin: 5rem 0;
+  > * {
+    padding: 0.5rem 0;
+  }
 `;
 const Projects = styled.div`
   flex: 2;
@@ -68,12 +117,13 @@ const Header = styled.div`
 `;
 const ProjectList = styled.div`
   margin: 2rem 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 `;
 const Project = styled.div`
   width: 100%;
-  border: 3px solid blue;
-  flex: 1;
-  flex-wrap: wrap;
+  border: 3px solid #201568;
+  padding: 1rem;
 `;
 export default DevDashBoard;
