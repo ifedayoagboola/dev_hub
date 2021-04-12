@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../images/msg1.svg";
+import img1 from "../images/user2.png";
 import styled from "styled-components";
 
 const Profile = () => {

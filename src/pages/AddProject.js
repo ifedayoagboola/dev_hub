@@ -29,8 +29,9 @@ const AddProject = () => {
           <option value="">PHP</option>
           <option value="">Others</option>
         </select>
+
         <h3>
-          Upload code: <Plus />{" "}
+          Add Project <Plus />
         </h3>
       </Project>
     </Container>
@@ -41,6 +42,7 @@ const Container = styled.div`
 `;
 const Title = styled.div`
   padding: 3rem 0;
+  line-height: 2rem;
 `;
 const Project = styled.div`
   display: flex;
@@ -49,16 +51,27 @@ const Project = styled.div`
   align-items: center;
   label,
   input,
-  select,
-  h3 {
-    padding: 0.5rem 0;
-    width: 65%;
+  select {
+    padding: 0.3rem 0;
+    width: 64%;
     @media screen and (max-width: 768px) {
       width: 100%;
     }
   }
+  label {
+    margin-top: 1rem;
+  }
+  input,
+  select {
+    border: none;
+    border-bottom: 1px solid #201568;
+    outline: none;
+  }
   select {
     margin-top: 2rem;
+  }
+  h3 {
+    padding: 2rem 0;
   }
 `;
 const Plus = styled(PlusCircle)`
