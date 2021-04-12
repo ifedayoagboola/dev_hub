@@ -4,6 +4,8 @@ import styled from "styled-components";
 import Project from "../components/Project";
 import Profile from "../components/Profile";
 
+import { Link } from "react-router-dom";
+
 import { PlusCircle } from "@styled-icons/bootstrap/PlusCircle";
 
 const DevDashBoard = () => {
@@ -13,8 +15,10 @@ const DevDashBoard = () => {
         <Profile />
         <Projects>
           <Header>
-            <h2>Projects</h2>
-            <Plus />
+            <h2>My Projects</h2>
+            <Link to="/add_project">
+              <Plus />
+            </Link>
           </Header>
           <ProjectList>
             <Project />
@@ -34,6 +38,9 @@ const Container = styled.div`
 `;
 const Content = styled.div`
   display: flex;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
 `;
 
 const Projects = styled.div`

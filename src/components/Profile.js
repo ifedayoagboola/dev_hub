@@ -32,17 +32,16 @@ const Name = styled.div`
   gap: 2rem;
 `;
 const Image = styled.div`
-  max-width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-
-  border: 3px solid #201568;
+  border: 1px solid #201568;
   img {
     width: 100%;
   }
 `;
 const Info = styled.div`
-  margin: 5rem 0;
+  margin: 2rem 0;
   > * {
     padding: 0.5rem 0;
   }
