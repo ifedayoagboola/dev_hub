@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { MailWithCircle } from "@styled-icons/entypo-social/MailWithCircle";
-import msg1 from "./images/msg1.svg";
+import msg1 from "../images/msg1.svg";
+import { Link } from "react-router-dom";
 
-const SignIn = () => {
+const SignUp = () => {
   return (
     <>
       <Parent>
@@ -11,7 +12,7 @@ const SignIn = () => {
           <p>
             Already have an account?
             <span>
-              <a href=""> Sign In</a>
+              <a href="/"> Sign In</a>
             </span>
           </p>
           <form action="">
@@ -27,7 +28,9 @@ const SignIn = () => {
               <label>Pasword</label>
               <input type="password" />
             </div>
-            <button>SIGN UP</button>
+            <Link to="/developersDB">
+              <button>SIGN UP</button>
+            </Link>
           </form>
         </Content>
       </Parent>
@@ -98,4 +101,4 @@ const Content = styled.div`
   }
 `;
 
-export default SignIn;
+export default SignUp;

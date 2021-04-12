@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import msg1 from "./images/msg1.svg";
+import msg1 from "../images/msg1.svg";
+import { Link } from "react-router-dom";
 
-const SignUp = () => {
+const SignIn = () => {
   return (
     <>
       <Parent>
@@ -10,7 +11,7 @@ const SignUp = () => {
           <p>
             Don't have an account?
             <span>
-              <a href=""> Sign up</a>
+              <a href="/sign_up"> Sign up</a>
             </span>
           </p>
           <form action="">
@@ -22,7 +23,9 @@ const SignUp = () => {
               <label>Pasword</label>
               <input type="password" />
             </div>
-            <button>SIGN IN</button>
+            <Link to="/developersDB">
+              <button>SIGN IN</button>
+            </Link>
           </form>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
@@ -96,4 +99,4 @@ const Content = styled.div`
   }
 `;
 
-export default SignUp;
+export default SignIn;
